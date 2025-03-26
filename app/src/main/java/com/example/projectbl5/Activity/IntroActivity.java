@@ -41,7 +41,7 @@ ActivityIntroBinding binding;
 
         binding.signUpBtn.setOnClickListener(new View.OnClickListener() {
             public void onClick(View v) {
-
+                startActivity(new Intent(IntroActivity.this,SignupActivity.class));
             }
         });
     }
