@@ -13,7 +13,7 @@
         android:layout_height="match_parent">
 
         <ImageView
-            android:id="@+id/imageView6"
+            android:id="@+id/pic"
             android:layout_width="0dp"
             android:layout_height="206dp"
             app:layout_constraintEnd_toEndOf="parent"
@@ -27,10 +27,10 @@
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/imageView6">
+            app:layout_constraintTop_toBottomOf="@+id/pic">
 
             <TextView
-                android:id="@+id/textView13"
+                android:id="@+id/titleTxt"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginStart="16dp"
@@ -49,7 +49,7 @@
                 android:text="4"
                 android:textColor="@color/blue_grey"
                 app:layout_constraintBottom_toBottomOf="parent"
-                app:layout_constraintStart_toStartOf="@+id/textView13" />
+                app:layout_constraintStart_toStartOf="@+id/titleTxt" />
 
             <ImageView
                 android:id="@+id/imageView7"
@@ -60,6 +60,52 @@
                 app:layout_constraintStart_toEndOf="@+id/starTxt"
                 app:layout_constraintTop_toTopOf="@+id/starTxt"
                 app:srcCompat="@drawable/star" />
+
+            <TextView
+                android:id="@+id/textView14"
+                android:layout_width="44dp"
+                android:layout_height="39dp"
+                android:text="+"
+                android:gravity="center"
+                android:textColor="@color/white"
+                android:textSize="30dp"
+                android:background="@drawable/plus_background"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent" />
+
+            <TextView
+                android:id="@+id/timeTxt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="TIme"
+                app:layout_constraintBottom_toBottomOf="@+id/starTxt"
+                app:layout_constraintEnd_toStartOf="@+id/textView14"
+                app:layout_constraintStart_toEndOf="@+id/starTxt"
+                app:layout_constraintTop_toTopOf="@+id/starTxt" />
+
+            <ImageView
+                android:id="@+id/imageView9"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:tint="@color/red"
+                app:layout_constraintBottom_toBottomOf="@+id/timeTxt"
+                app:layout_constraintStart_toEndOf="@+id/timeTxt"
+                app:layout_constraintTop_toTopOf="@+id/timeTxt"
+                app:srcCompat="@drawable/time" />
+
+            <TextView
+                android:id="@+id/priceTxt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="8dp"
+                android:text="$0"
+                android:textColor="@color/red"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                app:layout_constraintBottom_toBottomOf="@+id/titleTxt"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="@+id/titleTxt" />
 
 
         </androidx.constraintlayout.widget.ConstraintLayout>
